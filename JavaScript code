@@ -1,0 +1,9 @@
+function alphabetPosition(text) {
+    let nums = []
+    for (const letter of text.toLowerCase()) {
+      if (letter.charCodeAt() >= 97 && letter.charCodeAt() <= 122) {
+        nums.push(letter.charCodeAt()-96)
+      }
+    }
+  return nums.join(' ')
+}
